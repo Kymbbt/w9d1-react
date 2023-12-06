@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
-import shopImage from '../../assets/images/car_inventory.jpeg';
+import shopImage from '../../assets/images/red-sports.avif';
 import { NavBar } from '../sharedComponents'; 
 
 interface Props {
@@ -45,10 +45,10 @@ export const Home = (props: Props) => {
     
     return (
         <Root>
-            <NavBar /> // ADD THIS
+            <NavBar /> 
             <Main>
                 <MainText>
-                    <Typography variant='h3'> {props.title}</Typography>
+                    <Typography variant='h2'> {props.title}</Typography>
                     <Button sx={{ marginTop: '10px' }} component={Link} to={"/shop"} variant='contained'>Enter Info</Button>
                 </MainText>
             </Main>
